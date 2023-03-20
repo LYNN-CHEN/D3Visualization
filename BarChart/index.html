@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DDA 2003/MDS 6112 Assignment 1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Sortable Stacked Bar Chart</h1>
+
+    <div class="container">
+        <!-- set the dropdown panel -->
+        <div class="col-right">
+            <div class="control-bar">
+                <select id="display-type-selection">
+                    <option value="Bar">Bar Chart</option>
+                    <option value="Stacked">Stacked Bar Chart</option>
+                    <option value="Sorted">Sortable Stacked Bar Chart</option>
+                </select>
+            </div>
+        </div>
+        <!-- svg area -->
+        <div id="my_dataviz"></div>
+    </div>
+    
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/stackedBarChart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
